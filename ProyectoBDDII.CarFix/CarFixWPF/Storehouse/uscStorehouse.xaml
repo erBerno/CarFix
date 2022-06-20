@@ -1,0 +1,69 @@
+﻿<UserControl x:Class="CarFixWPF.Storehouse.uscStorehouse"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CarFixWPF.Storehouse"
+             mc:Ignorable="d" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+             TextElement.FontWeight="Regular"
+             TextElement.FontSize="13"
+             TextOptions.TextFormattingMode="Ideal"
+             TextOptions.TextRenderingMode="Auto"
+             FontFamily="{DynamicResource MaterialDesignFont}"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Border Background="#FF1A2331" CornerRadius="15">
+        <Grid Background="#FF1A2331" Margin="50">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Width="800" Height="80">
+                <TextBlock Text="GESTIÓN DE ALMACENES" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="30" FontSize="30" FontFamily="Paladins Condensed" Foreground="#e16b34 "/>
+            </StackPanel>
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Stretch">
+                <Button x:Name="btnStorehouses" Content="AÑADIR ALMACENES" FontWeight="Bold" Width="500" Margin="25" Background="#545c6a" BorderBrush="{x:Null}" Click="btnStorehouses_Click" Cursor="Hand">
+                    <Button.Triggers>
+                        <EventTrigger RoutedEvent="Button.MouseEnter">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <ColorAnimation To="#e16b34" 
+                                    Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)" 
+                                    FillBehavior="HoldEnd" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                        <EventTrigger RoutedEvent="Button.MouseLeave">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <ColorAnimation To="#545c6a" 
+                                    Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)" 
+                                    Duration="0:0:0:0"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </Button.Triggers>
+                </Button>
+                <Button x:Name="btnStorehouseL" Content="LISTA DE ALMACENES" FontWeight="Bold" Width="500" Background="#545c6a" BorderBrush="{x:Null}" Cursor="Hand" Click="btnStorehouseL_Click">
+                    <Button.Triggers>
+                        <EventTrigger RoutedEvent="UIElement.MouseEnter">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <ColorAnimation To="#e16b34" 
+                                    Storyboard.TargetProperty="(Control.Background).(SolidColorBrush.Color)" 
+                                    FillBehavior="HoldEnd" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                        <EventTrigger RoutedEvent="UIElement.MouseLeave">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <ColorAnimation To="#545c6a" 
+                                    Storyboard.TargetProperty="(Control.Background).(SolidColorBrush.Color)" 
+                                    Duration="0:0:0:0"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </Button.Triggers>
+                </Button>
+            </StackPanel>
+        </Grid>
+    </Border>
+</UserControl>

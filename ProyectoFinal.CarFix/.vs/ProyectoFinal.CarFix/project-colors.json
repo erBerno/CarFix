@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "62fd4d1b-2df3-4f2a-b211-a1e562f5bcf3": {
+      "ProjectGuid": "62fd4d1b-2df3-4f2a-b211-a1e562f5bcf3",
+      "DisplayName": "CarFixDAO",
+      "ColorIndex": 0
+    },
+    "e3cb823b-1898-4f43-8444-877e16019d86": {
+      "ProjectGuid": "e3cb823b-1898-4f43-8444-877e16019d86",
+      "DisplayName": "CarFixWPF",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

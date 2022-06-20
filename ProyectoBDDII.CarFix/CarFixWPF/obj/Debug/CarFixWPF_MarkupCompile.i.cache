@@ -1,0 +1,20 @@
+﻿CarFixWPF
+
+
+winexe
+C#
+.cs
+D:\OneDrive - Universidad Privada del Valle\3° SEMESTRE\BASES DE DATOS II\Proyecto Final - Bases de Datos II\ProyectoBDDII.CarFix\CarFixWPF\obj\Debug\
+CarFixWPF
+none
+false
+DEBUG;TRACE
+D:\OneDrive - Universidad Privada del Valle\3° SEMESTRE\BASES DE DATOS II\Proyecto Final - Bases de Datos II\ProyectoBDDII.CarFix\CarFixWPF\App.xaml
+22-1023082886
+1-1721198588
+261998906288
+241428981089
+Categories\uscCategories.xaml;Categories\winCategories.xaml;Employees\uscEmployee.xaml;Employees\winEmployeeList.xaml;Employees\winEmployeeRegister.xaml;Employees\winEmployeeUpdate.xaml;Main\MainWindow.xaml;Main\uscHome.xaml;Main\winChangePassword.xaml;Main\winLogin.xaml;ReplacementBrands\uscReplacementBrand.xaml;ReplacementBrands\winReplacementBrand.xaml;Replacements\uscReplacements.xaml;Replacements\winReplacements.xaml;Replacements\winReplacementsSearch.xaml;Settings\uscSettings.xaml;Settings\winSettingChangePassword.xaml;Storehouse\uscStorehouse.xaml;Storehouse\winStorehouse.xaml;Storehouse\winStorehouseList.xaml;Storehouse\winStorehouseUpdate.xaml;Styles\styles.xaml;
+
+True
+

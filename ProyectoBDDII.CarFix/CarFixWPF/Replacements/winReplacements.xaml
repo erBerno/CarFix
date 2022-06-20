@@ -1,0 +1,89 @@
+﻿<Window x:Class="CarFixWPF.Replacements.winReplacements"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:CarFixWPF.Replacements"
+        mc:Ignorable="d"
+        Title="winReplacements" Height="770" Width="1000" WindowStyle="None" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid Background="#1c2c3c">
+        <Grid Height="30" VerticalAlignment="Top" Background="Black">
+            <Button x:Name="btnClose" Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Right" Padding="0" Click="btnClose_Click" Cursor="Hand">
+                <materialDesign:PackIcon Kind="Close" Foreground="White" Height="30" Width="30"/>
+            </Button>
+        </Grid>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Orientation="Vertical" Margin="15 25 0 0" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock x:Name="txtTitle" Text="AGREGAR REPUESTO" FontFamily="Paladins Condensed" Foreground="#e16b34" FontSize="30" TextAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Vertical" Margin="20" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBox FontFamily="Arial" x:Name="txtRepName" Width="300" FontSize="18" materialDesign:HintAssist.Hint="Nombre Repuesto" materialDesign:HintAssist.FontFamily="Paladins Condensed" BorderThickness="2" BorderBrush="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Cursor="Arrow" />
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical" Margin="20" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBox FontFamily="Arial" x:Name="txtRepPrice" Width="300" FontSize="18" materialDesign:HintAssist.Hint="PRECIO" materialDesign:HintAssist.FontFamily="Paladins Condensed" BorderThickness="2" BorderBrush="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Cursor="Arrow" />
+            </StackPanel>
+
+            <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Vertical" Margin="20" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBox FontFamily="Arial" x:Name="txtCode" Width="300" FontSize="18" materialDesign:HintAssist.Hint="codigo del repuesto" materialDesign:HintAssist.FontFamily="Paladins Condensed" BorderThickness="2" BorderBrush="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Cursor="Arrow" />
+            </StackPanel>
+
+            <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Vertical" Margin="20" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBox FontFamily="Arial" x:Name="txtDescription" Width="300" FontSize="18" materialDesign:HintAssist.Hint="Descripcion" materialDesign:HintAssist.FontFamily="Paladins Condensed" BorderThickness="2" BorderBrush="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Cursor="Arrow" />
+            </StackPanel>
+
+            <StackPanel Grid.Row="3" Grid.Column="0" Orientation="Vertical" Margin="20" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBox FontFamily="Arial" x:Name="txtStock" Width="300" FontSize="18" materialDesign:HintAssist.Hint="stock" materialDesign:HintAssist.FontFamily="Paladins Condensed" BorderThickness="2" BorderBrush="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Cursor="Arrow" />
+            </StackPanel>
+
+            <StackPanel Grid.Row="4" Grid.Column="0" Orientation="Vertical" Margin="20" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock Text="Categoria:" FontFamily="Paladins Condensed" Foreground="#e16b34" FontSize="15" Margin="0 0 10 10"/>
+                <ComboBox FontFamily="Arial" x:Name="cmbCategory" Height="30" Width="300" BorderThickness="2" BorderBrush="White" Style="{StaticResource MaterialDesignComboBox}" />
+            </StackPanel>
+
+            <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Vertical" Margin="20" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock Text="MARCA:" FontFamily="Paladins Condensed" Foreground="#e16b34" FontSize="15" Margin="0 0 10 10"/>
+                <ComboBox FontFamily="Arial" x:Name="cmbBrand" Height="30" Width="300" BorderThickness="2" BorderBrush="White" Style="{StaticResource MaterialDesignComboBox}" />
+            </StackPanel>
+
+            <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Vertical" Margin="20" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock Text="ALMACEN:" FontFamily="Paladins Condensed" Foreground="#e16b34" FontSize="15" Margin="0 0 10 10"/>
+                <ComboBox FontFamily="Arial" x:Name="cmbStorehouse" Height="30" Width="300" BorderThickness="2" BorderBrush="White" Style="{StaticResource MaterialDesignComboBox}" />
+            </StackPanel>
+
+            <StackPanel Grid.Row="5" Grid.Column="0" Orientation="Vertical" Margin="100 0 0 0" VerticalAlignment="Center" HorizontalAlignment="Left">
+                <TextBlock Text="Escoja una Imagen:" Foreground="#e16b34" FontFamily="Paladins Condensed"/>
+                <Button x:Name="btnImages" Content="..." Background="#44373c" Cursor="Arrow" BorderBrush="{x:Null}" Click="btnImages_Click" />
+            </StackPanel>
+            <StackPanel Grid.Row="5" Grid.Column="0">
+                <Image x:Name="imgEmployee" Margin="10 0 100 0" HorizontalAlignment="Right" Width="100" Height="100"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="5" Grid.Column="1" VerticalAlignment="Center">
+                <ComboBox x:Name="cmbCameras" Margin="20" Height="30" Width="300" BorderThickness="2" BorderBrush="White" Style="{StaticResource MaterialDesignComboBox}"/>
+                <Button x:Name="btnRec" Click="btnRec_Click"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="6" Grid.ColumnSpan="2" Orientation="Vertical" Margin="20" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Button x:Name="btnRegister" Width="300" FontSize="18" Content="REGISTRAR" Height="50" Background="#44373c" Cursor="Arrow" BorderBrush="{x:Null}" FontFamily="Paladins Condensed" Click="btnRegister_Click" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

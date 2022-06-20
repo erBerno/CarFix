@@ -1,0 +1,71 @@
+﻿<Window x:Class="CarFixWPF.Storehouse.winStorehouse"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarFixWPF.Storehouse"
+        mc:Ignorable="d"
+        xmlns:m="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+         TextElement.FontWeight="Regular"
+         TextElement.FontSize="13"
+         TextOptions.TextFormattingMode="Ideal"
+         TextOptions.TextRenderingMode="Auto"
+         Background="{DynamicResource MaterialDesignPaper}"
+         FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="winStorehouse" Height="520" Width="850" WindowStyle="None" BorderThickness="0" Loaded="Window_Loaded">
+    <Grid>
+        <StackPanel Background="#1c2c3c">
+            <Grid Height="30" VerticalAlignment="Top" Background="Black">
+                <Button x:Name="btnClose" Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Right" Padding="0" Click="btnClose_Click" Cursor="Hand">
+                    <materialDesign:PackIcon Kind="Close" Foreground="White" Height="30" Width="30"/>
+                </Button>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="1" Grid.RowSpan="3" Grid.Column="1" Margin="30 10 30 0">
+                    <m:Map x:Name="myMap" ZoomLevel="13" Center="-17.393722, -66.156120" CredentialsProvider="AtVjiZEw2Gxyjree0CgCQpRM7Dn21cktrHqic6sScXetRIDZsga9iJRdEL9lKEGx" MouseDoubleClick="myMap_MouseDoubleClick"/>
+                </Grid>
+                <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Orientation="Vertical" Margin="15" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <TextBlock Text="AGREGAR ALMACEN" FontFamily="Paladins Condensed" Foreground="#e16b34" FontSize="30" TextAlignment="Center"/>
+                </StackPanel>
+                <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Vertical" Margin="20" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <TextBox FontFamily="Arial" x:Name="txtFirstName" Width="300" FontSize="18" materialDesign:HintAssist.Hint="Nombre Almacen" materialDesign:HintAssist.FontFamily="Paladins Condensed" BorderThickness="2" BorderBrush="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" Cursor="Arrow" />
+                </StackPanel>
+                <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Height="57" Margin="0 20 0 0">
+                    <TextBlock Text="CIUDAD:" FontFamily="Paladins Condensed" Foreground="#e16b34" FontSize="15" Margin="0 0 10 10"/>
+                    <ComboBox x:Name="cmbCity" FontFamily="Arial" Height="30" Width="300" BorderThickness="2" BorderBrush="White" Style="{StaticResource MaterialDesignComboBox}">
+                    </ComboBox>
+                </StackPanel>
+                <StackPanel Grid.Row="3" Grid.Column="0" Margin="60 0 0 0" VerticalAlignment="Center" HorizontalAlignment="Left">
+                    <TextBlock Text="Escoja una Imagen:" Foreground="#e16b34" FontFamily="Paladins Condensed"/>
+                    <Button x:Name="btnImages" Content="..." Background="#44373c" Cursor="Arrow" BorderBrush="{x:Null}" Click="btnImages_Click"/>
+                </StackPanel>
+                <StackPanel Grid.Row="3" Grid.Column="0" Margin="50 20" HorizontalAlignment="Right">
+                    <Image x:Name="imgStorehouse" HorizontalAlignment="Right" Width="100" Height="100"/>
+                </StackPanel>
+                <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" >
+                    <Button x:Name="btnZoomIn" Content="+" Margin="20" Height="30" Width="60" Background="#44373c" BorderBrush="{x:Null}" Click="btnZoomIn_Click"/>
+                    <Button x:Name="btnZoomOut" Content="-" Margin="20" Height="30" Width="60" Background="#44373c" BorderBrush="{x:Null}" Click="btnZoomOut_Click"/>
+                    <Button x:Name="btnRoad" Content="Calles" Margin="20" Height="30" Width="70" Background="#44373c" BorderBrush="{x:Null}" Click="btnRoad_Click"/>
+                    <Button x:Name="btnAerial" Content="Aereo" Margin="20" Height="30" Width="70" Background="#44373c" BorderBrush="{x:Null}" Click="btnAerial_Click"/>
+                </StackPanel>
+                <StackPanel Grid.Row="4" Grid.Column="0" Orientation="Vertical" Margin="30" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Button x:Name="btnRegister" Width="300" FontSize="18" Content="REGISTRAR" Height="50" Background="#44373c" Cursor="Arrow" BorderBrush="{x:Null}" FontFamily="Paladins Condensed" Click="btnRegister_Click"  />
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>

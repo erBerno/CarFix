@@ -1,0 +1,6 @@
+D:\OneDrive - Universidad Privada del Valle\3° SEMESTRE\BASES DE DATOS II\Proyecto Final - Bases de Datos II\ProyectoFinal.CarFix\CarFixDAO\bin\Debug\CarFixDAO.dll
+D:\OneDrive - Universidad Privada del Valle\3° SEMESTRE\BASES DE DATOS II\Proyecto Final - Bases de Datos II\ProyectoFinal.CarFix\CarFixDAO\bin\Debug\CarFixDAO.pdb
+D:\OneDrive - Universidad Privada del Valle\3° SEMESTRE\BASES DE DATOS II\Proyecto Final - Bases de Datos II\ProyectoFinal.CarFix\CarFixDAO\obj\Debug\CarFixDAO.csproj.CoreCompileInputs.cache
+D:\OneDrive - Universidad Privada del Valle\3° SEMESTRE\BASES DE DATOS II\Proyecto Final - Bases de Datos II\ProyectoFinal.CarFix\CarFixDAO\obj\Debug\CarFixDAO.dll
+D:\OneDrive - Universidad Privada del Valle\3° SEMESTRE\BASES DE DATOS II\Proyecto Final - Bases de Datos II\ProyectoFinal.CarFix\CarFixDAO\obj\Debug\CarFixDAO.pdb
+D:\OneDrive - Universidad Privada del Valle\3° SEMESTRE\BASES DE DATOS II\Proyecto Final - Bases de Datos II\ProyectoFinal.CarFix\CarFixDAO\obj\Debug\CarFixDAO.csproj.AssemblyReference.cache

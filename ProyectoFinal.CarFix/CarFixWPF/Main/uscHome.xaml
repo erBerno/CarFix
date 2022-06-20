@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="CarFixWPF.Main.uscHome"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CarFixWPF.Main"
+             mc:Ignorable="d" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+             TextElement.FontWeight="Regular"
+             TextElement.FontSize="13"
+             TextOptions.TextFormattingMode="Ideal"
+             TextOptions.TextRenderingMode="Auto"
+             Background="{DynamicResource MaterialDesignPaper}"
+             FontFamily="{DynamicResource MaterialDesignFont}"
+             d:DesignHeight="450" d:DesignWidth="1080">
+    <Grid Background="#1C2C3C">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Image Source="../Imgs/logoCarFix.png" Margin="293,0,293,133"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,400,0,100" TextWrapping="Wrap" Text="BIENVENIDO A CARFIX" VerticalAlignment="Top" FontFamily="Paladins Condensed" FontSize="36" Foreground="#dddfe1" />
+    </Grid>
+</UserControl>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarFixWPF", "CarFixWPF\CarFixWPF.csproj", "{5A6A822A-93D4-418F-84F3-87E81C2ABF20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarFixDAO", "..\ProyectoFinal.CarFix\CarFixDAO\CarFixDAO.csproj", "{62FD4D1B-2DF3-4F2A-B211-A1E562F5BCF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A6A822A-93D4-418F-84F3-87E81C2ABF20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A6A822A-93D4-418F-84F3-87E81C2ABF20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A6A822A-93D4-418F-84F3-87E81C2ABF20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A6A822A-93D4-418F-84F3-87E81C2ABF20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62FD4D1B-2DF3-4F2A-B211-A1E562F5BCF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62FD4D1B-2DF3-4F2A-B211-A1E562F5BCF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62FD4D1B-2DF3-4F2A-B211-A1E562F5BCF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62FD4D1B-2DF3-4F2A-B211-A1E562F5BCF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2BD3BBD2-8785-42B2-95BF-6B96D0FFDC1D}
+	EndGlobalSection
+EndGlobal

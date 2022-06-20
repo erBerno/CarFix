@@ -1,0 +1,22 @@
+﻿<Window x:Class="CarFixWPF.ReplacementBrand.winAdmReplacementBrand"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarFixWPF.ReplacementBrand"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="winAdmReplacementBrand" Height="450" Width="800">
+    <Grid Background="#1C2C3C">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock Text="MARCAS DE REPUESTOS" FontSize="18" FontFamily="Paladins Condensed" Padding="20" Foreground="#e16b34"/>
+        </StackPanel>
+    </Grid>
+</Window>

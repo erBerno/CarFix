@@ -1,0 +1,2 @@
+POR FAVOR ABRIR EL ARCHIVO ProyectoBDDII.CarFix, el otro solo esta porque carga de ahi el DAO, si lo borro
+no funciona.
